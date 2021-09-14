@@ -1,5 +1,9 @@
 FROM ncoder/ogdf:v0.1.2-dev
 
+RUN apt-get update && \
+    apt install -y nodejs npm && \
+    rm -rf /var/lib/apt/lists/*
+
 RUN pip install --no-cache-dir notebook jupyterhub
 
 ARG NB_USER=jovyan
