@@ -1,4 +1,4 @@
-FROM ncoder/ogdf:v0.1.2-dev
+FROM ncoder/ogdf:v0.1.2.1-dev
 
 RUN pip install --no-cache-dir jupyter jupyterlab
 
