@@ -18,3 +18,9 @@ USER root
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
 WORKDIR ${HOME}
+RUN mv ogdf-python/docs/examples examples \
+    && rm -rf ogdf-python \
+#    && mv /opt/ogdf/doc/html ogdf-doc
+#ENV OGDF_DOC_URL=http://127.0.0.1:8888/view/ogdf-doc/%s.html#%s
+
+# TODO clone ogdf_python examples (and maybe docs), copy over OGDF doc and set OGDF_DOC_URL

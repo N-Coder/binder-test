@@ -1,0 +1,3 @@
+[submodule "ogdf-python"]
+	path = ogdf-python
+	url = https://github.com/N-Coder/ogdf-python.git
